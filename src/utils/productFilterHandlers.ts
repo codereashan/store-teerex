@@ -9,6 +9,7 @@ export const getProductsByGender = (products: any, gender: any) =>
   );
 
 export const getProductsByPrice = (products: any, price: any) =>
+  // eslint-disable-next-line
   products.filter((item: any) => {
     if (price.length > 0) {
       for (let option of price) {
